@@ -7,7 +7,7 @@ std::string getRandomWord(char type){
     std::vector<std::string> fruits;
     std::string newFruits[] = {"apple", "banana", "cherry", "duran", "grapes", "strawberry"};
     std::vector<std::string> subjects; 
-    std::string newSubjects[] = {"math", "art", "english", "science", "physical education", "sex ed"};
+    std::string newSubjects[] = {"math", "art", "english", "science", "history", "sex ed"};
     fruits.insert(fruits.end(), std::begin(newFruits), std::end(newFruits));
     subjects.insert(subjects.end(), std::begin(newSubjects), std::end(newSubjects));
     std::random_device rd;
@@ -38,7 +38,7 @@ int main(){
     std::cin >> type;
     std::string actualWord = getRandomWord(type);
     std::vector<char> wordLetters(actualWord.begin(), actualWord.end());
-    int tries = 5;
+    int tries = 3;
     std::vector<char> letters;
     char guessedLetter;
     std::string guessedWord;
