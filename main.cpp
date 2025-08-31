@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <random>
+#include <algorithm>
 
 std::string getRandomWord(char type){
     std::vector<std::string> fruits;
